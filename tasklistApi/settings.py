@@ -45,9 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tasks',
     'rest_framework',
     'corsheaders',
+    'tasks',
+
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True  # O configura CORS_ALLOWED_ORIGINS según tu necesidad 
+CORS_ALLOW_ORIGINS = [
+    "http://localhost:8100",
+
+]
 
 CORS_ALLOW_CREDENTIALS = True 
 
