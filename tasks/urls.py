@@ -1,7 +1,9 @@
-from rest_framework import routers
-from .api import TaskViewSet
-router = routers.DefaultRouter()
+from django.urls import path
+from .views import *
 
-router.register('api/tasks', TaskViewSet, 'tasks')
-
-urlpatterns = router.urls
+urlpatterns = [
+    path('<int:pk>/', DetailTodo.as_view()),
+    path('', ListTodo.as_view()),
+    path('create/', CreateTodo.as_view()),
+    path('delete/<int:pk>/', DeleteTodo.as_view())
+]

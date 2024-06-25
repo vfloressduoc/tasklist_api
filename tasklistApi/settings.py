@@ -45,9 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'corsheaders',
-    'tasks',
+    'rest_framework', #third party app
+    'corsheaders', # ?
+    'tasks', #miapp
+
+    
 
 ]
 
