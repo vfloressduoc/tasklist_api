@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework', #third party app
-    'corsheaders', # ?
+    'corsheaders', 
     'tasks', #miapp
 
     
@@ -56,9 +56,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -67,8 +67,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ORIGINS = [
-    "http://localhost:8100",
-
+    "http://localhost:8100",  
+    "http://localhost:8101", 
+    "https://tasklist-api-rc1k.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True 
