@@ -69,7 +69,7 @@ MIDDLEWARE = [
 CORS_ALLOW_ORIGINS = [
     "http://localhost:8100",  
     "http://localhost:8101", 
-    "https://tasklist-api-rc1k.onrender.com",
+    "https://tasklist-api-rc1k.onrender.com/api",
 ]
 
 CORS_ALLOW_CREDENTIALS = True 
