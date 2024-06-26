@@ -38,5 +38,59 @@ models:
         itemPriority: "normal",
         itemCategory: "Casa",
         completed: false
-      }
+      },
+       {
+      id: 5,
+      itemName: "Task 5: Reunión con el equipo",
+      description: "Preparar la presentación para la reunión semanal.",
+      itemDate: "2024-07-10",
+      itemPriority: "alta",
+      itemCategory: "Trabajo",
+      completed: false
+    },
+    {
+      id: 6,
+      itemName: "Task 6: Llamar al médico",
+      description: "Hacer cita para revisión anual.",
+      itemDate: "2024-07-05",
+      itemPriority: "normal",
+      itemCategory: "Personal",
+      completed: true
+    },
+    {
+      id: 7,
+      itemName: "Task 7: Comprar regalos",
+      description: "Comprar regalos para el aniversario de bodas.",
+      itemDate: "2024-07-15",
+      itemPriority: "normal",
+      itemCategory: "Personal",
+      completed: false
+    },
+    {
+      id: 8,
+      itemName: "Task 8: Preparar informe",
+      description: "Preparar informe mensual de ventas.",
+      itemDate: "2024-07-20",
+      itemPriority: "alta",
+      itemCategory: "Trabajo",
+      completed: false
+    },
+    {
+      id: 9,
+      itemName: "Task 9: Revisar contrato",
+      description: "Revisar y enviar comentarios sobre el contrato nuevo.",
+      itemDate: "2024-07-03",
+      itemPriority: "alta",
+      itemCategory: "Trabajo",
+      completed: false
+    },
+    {
+      id: 10,
+      itemName: "Task 10: Entrenamiento",
+      description: "Preparar plan de entrenamiento para la próxima semana.",
+      itemDate: "2024-07-07",
+      itemPriority: "normal",
+      itemCategory: "Personal",
+      completed: true
+    }
     ]
