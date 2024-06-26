@@ -1,9 +1,12 @@
 models:
   Todo:
+    fake:
+      _count: 4
     data: [
       {
         id: 1,
         itemName: "Task 1",
+        description: "",
         itemDate: "2024-06-27",
         itemPriority: "importante",
         itemCategory: "UNI",
@@ -12,6 +15,7 @@ models:
       {
         id: 2,
         itemName: "Task 2: Video",
+        description: "",
         itemDate: "2024-06-26",
         itemPriority: "importante",
         itemCategory: "UNI",
@@ -20,6 +24,7 @@ models:
       {
         id: 3,
         itemName: "Comprar mercaderia",
+        description: "",
         itemDate: "2024-06-27",
         itemPriority: "baja",
         itemCategory: "Casa",
@@ -28,6 +33,7 @@ models:
       {
         id: 4,
         itemName: "Cumpleaños",
+        description: "",
         itemDate: "2024-06-29",
         itemPriority: "normal",
         itemCategory: "Casa",
