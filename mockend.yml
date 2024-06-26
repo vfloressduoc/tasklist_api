@@ -1,11 +1,22 @@
 models:
   Todo:
-    fake:
-      _count: 2
-      id: { intRange: [1, 2] }
-      itemName: { oneOf: ["Rehacer el codigo", "new task"] }
-      description: { oneOf: ["desde cero y conectar a android, testing", "new task create to do"] }
-      itemDate: { oneOf: ["2024-06-25", "2024-06-28"] }
-      itemPriority: { fixed: "normal" }
-      itemCategory: { fixed: "2024-06-26T03:04:11.473428+00:00" }
-      completed: { fixed: false }
+    data: [
+      {
+        id: 1,
+        itemName: "Rehacer el codigo",
+        description: "desde cero y conectar a android, testing",
+        itemDate: "2024-06-25",
+        itemPriority: "normal",
+        itemCategory: "2024-06-26T03:04:11.473428+00:00",
+        completed: false
+      },
+      {
+        id: 2,
+        itemName: "new task",
+        description: "new task create to do",
+        itemDate: "2024-06-28",
+        itemPriority: "normal",
+        itemCategory: "2024-06-26T03:04:11.473428+00:00",
+        completed: false
+      }
+    ]
