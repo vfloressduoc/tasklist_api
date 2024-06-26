@@ -3,20 +3,34 @@ models:
     data: [
       {
         id: 1,
-        itemName: "Rehacer el codigo",
-        description: "desde cero y conectar a android, testing",
-        itemDate: "2024-06-25",
-        itemPriority: "normal",
-        itemCategory: "2024-06-26T03:04:11.473428+00:00",
+        itemName: "Task 1",
+        itemDate: "2024-06-27",
+        itemPriority: "importante",
+        itemCategory: "UNI",
         completed: false
       },
       {
         id: 2,
-        itemName: "new task",
-        description: "new task create to do",
-        itemDate: "2024-06-28",
+        itemName: "Task 2: Video",
+        itemDate: "2024-06-26",
+        itemPriority: "importante",
+        itemCategory: "UNI",
+        completed: false
+      },
+      {
+        id: 3,
+        itemName: "Comprar mercaderia",
+        itemDate: "2024-06-27",
+        itemPriority: "baja",
+        itemCategory: "Casa",
+        completed: false
+      },
+      {
+        id: 4,
+        itemName: "Cumpleaños",
+        itemDate: "2024-06-29",
         itemPriority: "normal",
-        itemCategory: "2024-06-26T03:04:11.473428+00:00",
+        itemCategory: "Casa",
         completed: false
       }
     ]
