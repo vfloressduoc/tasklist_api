@@ -2,10 +2,10 @@ models:
   Todo:
     fake:
       _count: 2
-      id: { int: [1, 2] }
-      itemName: { oneOfString: ["Rehacer el codigo", "new task"] }
-      description: { oneOfString: ["desde cero y conectar a android, testing", "new task create to do"] }
-      itemDate: { oneOfDate: ["2024-06-25", "2024-06-28"] }
-      itemPriority: { oneOfString: ["normal"] }
-      itemCategory: { oneOfDateTime: ["2024-06-26T03:04:11.473428+00:00"] }
-      completed: { bool: 0 }
+      id: { seq: 1 }
+      itemName: { oneOf: ["Rehacer el codigo", "new task"] }
+      description: { oneOf: ["desde cero y conectar a android, testing", "new task create to do"] }
+      itemDate: { date: ["2024-06-25", "2024-06-28"] }
+      itemPriority: { const: "normal" }
+      itemCategory: { dateTime: "2024-06-26T03:04:11.473428+00:00" }
+      completed: { bool: false }
