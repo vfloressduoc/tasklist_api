@@ -1,13 +1,5 @@
 models:
   Todo:
-    fake:
-      _count: 2
-      itemName: { stringOf: ["Rehacer el codigo", "new task"] }
-      description: { stringOf: ["desde cero y conectar a android, testing", "new task create to do"] }
-      itemDate: { stringOf: ["2024-06-25", "2024-06-28"] }
-      itemPriority: { stringOf: ["normal"] }
-      itemCategory: { stringOf: ["2024-06-26T03:04:11.473428+00:00"] }
-      completed: { bool: false }
     data: [
       {
         id: 1,
