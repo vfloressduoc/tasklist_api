@@ -1,7 +1,12 @@
 from rest_framework import serializers
-from .models import ToDo
+from .models import MotivationalQuote, Reminder
 
-class ToDoSerializer(serializers.ModelSerializer):
+class MotivationalQuoteSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ToDo
-        fields = ('id', 'itemName', 'description', 'itemDate', 'itemPriority', 'itemCategory', 'completed')
+        model = MotivationalQuote
+        fields = ('id', 'quote_text', 'author')
+
+class ReminderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reminder
+        fields = ('id', 'text')

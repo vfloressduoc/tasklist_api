@@ -1,19 +1,13 @@
+# tasks/views.py
+
 from rest_framework import generics
-from .serializer import ToDoSerializer
-from .models import ToDo
+from .serializer import MotivationalQuoteSerializer, ReminderSerializer
+from .models import MotivationalQuote, Reminder
 
-class ListTodo(generics.ListAPIView):
-    queryset = ToDo.objects.all()
-    serializer_class = ToDoSerializer
+class ListMotivationalQuotes(generics.ListAPIView):
+    queryset = MotivationalQuote.objects.all()
+    serializer_class = MotivationalQuoteSerializer
 
-class DetailTodo(generics.RetrieveUpdateAPIView):
-    queryset = ToDo.objects.all()
-    serializer_class = ToDoSerializer
-
-class CreateTodo(generics.CreateAPIView):
-    queryset = ToDo.objects.all()
-    serializer_class = ToDoSerializer
-
-class DeleteTodo(generics.DestroyAPIView):
-    queryset = ToDo.objects.all()
-    serializer_class = ToDoSerializer
+class ListReminders(generics.ListAPIView):
+    queryset = Reminder.objects.all()
+    serializer_class = ReminderSerializer
